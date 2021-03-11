@@ -1,3 +1,22 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer base {
+    @font-face {
+        font-family: Atkinson Hyperlegible;
+        src: url("../../public/static/fonts/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2") format('woff2'),
+            url("../../public/static/fonts/WOFF/Atkinson-Hyperlegible-Regular-102.woff") format('woff'),
+            url("../../public/static/fonts/TTF/Atkinson-Hyperlegible-Regular-102.ttf") format('ttf'),
+            url("../../public/static/fonts/EOT/Atkinson-Hyperlegible-Regular-102.eot") format('eot');
+        font-weight: normal;
+    }
+    @font-face {
+        font-family: Atkinson Hyperlegible;
+        src: url("../../public/static/fonts/WOFF2/Atkinson-Hyperlegible-Bold-102a.woff2"),
+            url("../../public/static/fonts/WOFF/Atkinson-Hyperlegible-Bold-102.woff"),
+            url("../../public/static/fonts/TTF/Atkinson-Hyperlegible-Bold-102.ttf"),
+            url("../../public/static/fonts/EOT/Atkinson-Hyperlegible-Bold-102.eot");
+        font-weight: bold;
+    }
+}
