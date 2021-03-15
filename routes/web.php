@@ -27,8 +27,12 @@ Route::get('/deck/bridge', function () {
     return view('bridge');
 });
 
-Route::get('/about')
+Route::get('/about'  function () {
+    return view('about');
+});
 
 Route::get('/contact')
+    return view('contact');
+});
 
 */
