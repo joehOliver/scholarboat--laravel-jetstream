@@ -17,4 +17,8 @@
             url("../../public/static/fonts/TTF/Atkinson-Hyperlegible-Bold-102.ttf")  format('ttf');
         font-weight: bold;
     }
+
+    html, body {
+        @apply font-serif
+    }
 }
