@@ -22,10 +22,13 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 /*
+Route::get('/scholarship/{id}')
+    return view('contact');
+}); 
 
-Route::get('/deck/bridge', function () {
-    return view('bridge');
-});
+Route::get('/institution/{id}')
+    return view('contact');
+}); 
 
 Route::get('/about'  function () {
     return view('about');
@@ -34,5 +37,7 @@ Route::get('/about'  function () {
 Route::get('/contact')
     return view('contact');
 });
+
+
 
 */
