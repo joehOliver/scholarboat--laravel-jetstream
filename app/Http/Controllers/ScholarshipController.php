@@ -9,9 +9,14 @@ class ScholarshipController extends Controller
 {
     public function show($id)
     {
-        $scholarship = 'test';
-        returun view('scholarship', [
-            'scholarship' => $scholarship
-        ]);
+        $scholarship = Scholarship::find($id);
+        
+        return view('scholarships.show', ['scholarship' => $scholarship]);
+    }
+
+    public function index() {
+        $scholarships = Scholarship::latest()->get();
+        
+        return view('scholarships.index', ['scholarships' => $scholarships]);
     }
 }

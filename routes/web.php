@@ -21,10 +21,13 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::get('/scholarships', 'ScholarshipController@index');
+Route::get('/scholarships/{id}', 'ScholarshipController@show');
+
+Route::get('/institutions', 'InstitutionController@index');
+Route::get('/institutions/{id}', 'InstitutionsController@show');
 /*
-Route::get('/scholarship/{id}', )
-    return view('contact');
-}); 
+
 
 Route::get('/institution/{id}')
     return view('contact');
