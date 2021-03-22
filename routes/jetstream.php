@@ -18,10 +18,10 @@ Route::group(['middleware' => config('jetstream.middleware', ['web'])], function
 
     Route::group(['middleware' => ['auth', 'verified']], function () {
         // User & Profile...
-        Route::get('/user/profile', [UserProfileController::class, 'show'])
+        Route::get('/bridge/user/profile', [UserProfileController::class, 'show'])
                     ->name('profile.show');
 
-        //Route::get('/add/scholarship')
+        //Route::get('/add/scholarship', 'ScholarshipsController@show');
 
         //Route::get('/add/institution')
 

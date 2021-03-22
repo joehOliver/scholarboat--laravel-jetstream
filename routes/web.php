@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('scholarboat');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/bridge/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Scholarship;
 
-class ScholarshipController extends Controller
+class ScholarshipsController extends Controller
 {
     public function show($id)
     {
