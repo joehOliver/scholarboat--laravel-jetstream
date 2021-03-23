@@ -29,11 +29,19 @@ module.exports = {
             red: colors.red,
             yellow: {
               light: '#fdff87',
-              DEFAULT: '#FAFF03',
+              DEFAULT: '#F9C600',
               dark: '#ffe100'
             },
             green: colors.emerald,
-            blue: colors.blue,
+            blue: {
+                light: '#B4C8DE',
+                DEFAULT: '#1E52E3',
+                dark: '#2949A3'
+            },
+            boatRed: {
+                DEFAULT: '#CC2728',
+                dark: '#722E2E'
+            },
             indigo: colors.indigo,
             purple: colors.violet,
             pink: colors.pink,

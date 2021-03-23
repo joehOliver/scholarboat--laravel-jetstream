@@ -26,21 +26,11 @@ Route::get('/scholarships/{id}', 'ScholarshipController@show');
 
 Route::get('/institutions', 'InstitutionController@index');
 Route::get('/institutions/{id}', 'InstitutionsController@show');
-/*
 
-
-Route::get('/institution/{id}')
-    return view('contact');
-}); 
-
-Route::get('/about'  function () {
+Route::get('/about', function() {
     return view('about');
 });
 
-Route::get('/contact')
+Route::get('/contact', function() {
     return view('contact');
 });
-
-
-
-*/

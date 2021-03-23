@@ -21,15 +21,15 @@ Route::group(['middleware' => config('jetstream.middleware', ['web'])], function
         Route::get('/bridge/user/profile', [UserProfileController::class, 'show'])
                     ->name('profile.show');
 
-        //Route::get('/add/scholarship', 'ScholarshipsController@show');
+        //Route::post('/scholarship/add', 'ScholarshipsController@create');
 
-        //Route::get('/add/institution')
+        //Route::post('/institution/add', 'InstitutionsController@create');
 
-        //Route::get('/add/user')
+        //Route::get('/user/add')
 
-        //Route::get('/edit/scholarship/{id})
+        //Route::get('/edit/scholarship/{id}, 'ScholarshipsController@edit');
 
-        //Route::get('/edit/institution/{id})
+        //Route::get('/edit/institution/{id}, 'ScholarshipsController@edit');
 
         // API...
         if (Jetstream::hasApiFeatures()) {
