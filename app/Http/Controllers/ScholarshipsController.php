@@ -14,7 +14,9 @@ class ScholarshipsController extends Controller
      */
     public function index()
     {
-        //
+        $scholarships = Scholarship::latest()->get();
+
+        return view('scholarships.index', ['scholarships' => $scholarships]);
     }
 
     /**
@@ -44,9 +46,11 @@ class ScholarshipsController extends Controller
      * @param  \App\Models\Scholarship  $scholarship
      * @return \Illuminate\Http\Response
      */
-    public function show(Scholarship $scholarship)
+    public function show($id)
     {
-        //
+        $scholarship = Scholarship::find($id);
+
+        return view('scholarships.show', ['scholarship' => $scholarship]);
     }
 
     /**

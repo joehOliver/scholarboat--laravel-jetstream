@@ -14,7 +14,9 @@ class InstitutionsController extends Controller
      */
     public function index()
     {
-        //
+        $institutions = Institution::latest()->get();
+
+        return view('scholarships.index', ['scholarships' => $institutions]);
     }
 
     /**
