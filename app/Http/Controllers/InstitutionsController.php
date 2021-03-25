@@ -26,7 +26,7 @@ class InstitutionsController extends Controller
      */
     public function create()
     {
-        //
+        return view('institutions.create');
     }
 
     /**
@@ -46,9 +46,11 @@ class InstitutionsController extends Controller
      * @param  \App\Models\Institution  $institution
      * @return \Illuminate\Http\Response
      */
-    public function show(Institution $institution)
+    public function show($id)
     {
-        //
+        $institution = Institution::find($id);
+
+        return view('institutions.show', ['institution' => $institution]);
     }
 
     /**
@@ -57,9 +59,11 @@ class InstitutionsController extends Controller
      * @param  \App\Models\Institution  $institution
      * @return \Illuminate\Http\Response
      */
-    public function edit(Institution $institution)
+    public function edit($id)
     {
-        //
+        $institution = Institution::find($id);
+
+        return view('institutions.edit', ['institution' => $institution]);
     }
 
     /**

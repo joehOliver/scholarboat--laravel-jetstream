@@ -1,44 +1,51 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="A scholarship directory and promotion website to help Filipinos easily find opportunities and scholarships for colleges in the Philippines.">
-
-    <title>ScholarboatPH | All Aboard!</title>
-
-    <!-- Fonts -->
-
-    <!-- Styles -->
-    
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body class="font-sans">
-    <!-- NAVBAR -->
-    Hello World
+<x-a
+    <!-- NAVBAR mobile-->
     <nav>
-        <div>
-
+        <div class="text-blue-dark">
+            <a href="/">scholarboatph</a>
         </div>
 
         <ul>
             <li>
-                <a></a>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/scholarships">Scholarships</a>
+            </li>
+            <li>
+                <a href="/institutions">Institutions</a>
+            </li>
+            <li>
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="/contact">Contact Us</a>
             </li>
         </ul>
-
     <nav>
-
     <!-- /NAVBAR -->
 
-    <!-- HERO SEARCH -->
-    <main>
+    <!-- NAVBAR desktop -->
 
+    <!-- /NAVBAR desktop -->
+
+
+
+    <!-- HERO -->
+    <main>
+        <div>
+
+        </div>
+        <div>
+        
+        </div>
     </main>
 
     <!-- /HERO SEARCH -->
+
+    <div>
+
+    </div>
 
     <!-- BODY -->
     <section>
@@ -49,9 +56,28 @@
 
     <!-- FOOTER -->
     <footer>
+        <!-- have a question? -->
+        <div>
 
+        </div>
+
+        <!-- email and address -->
+        <div>
+
+        </div>
+
+        <!-- menu -->
+        <ul>
+            <li>
+
+            </li>
+        </ul>
+
+        <!-- social links -->
+        <ul>
+            <li>
+                <a></a>
+            </li>
+        </ul>
     </footer>
 </body>
-
-
-</html>

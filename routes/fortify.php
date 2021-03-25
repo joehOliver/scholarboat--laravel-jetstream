@@ -31,7 +31,7 @@ Route::group(['middleware' => config('fortify.middleware', ['web'])], function (
     $limiter = config('fortify.limiters.login');
     $twoFactorLimiter = config('fortify.limiters.two-factor');
 
-    Route::post('/login', [AuthenticatedSessionController::class, 'store'])
+    Route::post('/bridge', [AuthenticatedSessionController::class, 'store'])
         ->middleware(array_filter([
             'guest',
             $limiter ? 'throttle:'.$limiter : null,

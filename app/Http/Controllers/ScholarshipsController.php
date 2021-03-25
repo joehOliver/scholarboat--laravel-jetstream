@@ -26,7 +26,7 @@ class ScholarshipsController extends Controller
      */
     public function create()
     {
-        //
+        return view('scholarships.create');
     }
 
     /**
@@ -61,7 +61,9 @@ class ScholarshipsController extends Controller
      */
     public function edit(Scholarship $scholarship)
     {
-        //
+        $scholarship = Scholarship::find($id);
+
+        return view('scholarships.edit', ['scholarship' => $scholarship]);
     }
 
     /**
