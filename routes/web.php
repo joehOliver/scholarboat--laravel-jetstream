@@ -28,9 +28,9 @@ Route::get('/institutions', 'InstitutionController@index');
 Route::get('/institutions/{id}', 'InstitutionsController@show');
 
 Route::get('/about', function() {
-    return view('about');
+    return view('static.about');
 });
 
 Route::get('/contact', function() {
-    return view('contact');
+    return view('static.contact');
 });

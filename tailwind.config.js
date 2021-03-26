@@ -34,9 +34,11 @@ module.exports = {
             },
             green: colors.emerald,
             blue: {
-                light: '#B4C8DE',
+                lightest: '#B4C8DE',
+                light: '#9BA6C0',
                 DEFAULT: '#1E52E3',
-                dark: '#2949A3'
+                dark: '#2949A3',
+                darkest: '#011945'
             },
             boatRed: {
                 DEFAULT: '#CC2728',

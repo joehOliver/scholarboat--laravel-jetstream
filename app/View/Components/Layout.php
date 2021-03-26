@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class nav-header extends Component
+class Layout extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class nav-header extends Component
      */
     public function render()
     {
-        return view('components.nav-header');
+        return view('components.layout');
     }
 }

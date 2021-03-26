@@ -18,7 +18,18 @@
         font-weight: bold;
     }
 
-    html, body {
+    html {
         @apply font-serif
+    }
+}
+
+@layer components {
+    .default-icon {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .social-icon {
+        fill: #828282;
     }
 }
