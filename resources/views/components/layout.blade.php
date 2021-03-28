@@ -31,7 +31,8 @@
 
         #hero-image {
             min-width: 1200px;
-            transform: translateX(-70vw);
+            transform: translateX(-30%);
+            
         }
 
         @media (max-width: 640px) {
@@ -46,6 +47,10 @@
                 visibility: visible;
                 transform: translateX(0);
                 transition: transform var(--duration) cubic-bezier(0.16, 1, 0.3, 1);
+            }
+
+            #hero-image {
+                transform: translateX(-70vw);
             }
         }
     </style>

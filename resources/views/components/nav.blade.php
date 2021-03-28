@@ -10,22 +10,28 @@
         <a class="text-blue-dark text-2xl font-bold p-4" href="/">
             scholarboatph
         </a>
+        <nav class="md:flex flex-row hidden">
+            <a class="text-lg font-bold p-4 text-blue-darkest" href="/">Home</a>
+            <a class="text-lg font-bold p-4 text-blue-darkest" href="/scholarships">Scholarships</a>
+            <a class="text-lg font-bold p-4 text-blue-darkest" href="/institutions">Institutions</a>
+            <a class="text-lg font-bold p-4 text-blue-darkest" href="/about">About</a>
+        </nav>
     </div>
     <aside id="menu-open"
-        class="absolute -top-0 z-20 bg-white max-h-full h-screen w-screen overflow-hidden overscroll-contain invisible shadow-2xl">
+        class="absolute -top-0 z-20 bg-white max-h-full h-screen w-screen overflow-hidden overscroll-contain invisible shadow-2xl
+        md:hidden">
         <a href="#" id="menu-close" title="Close Menu" aria-label="Close Menu" class="md:hidden p-4 absolute top-0 left-0">
             <svg class="default-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2949A3" width="36px" height="36px">
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
             </svg>            
         </a>
-        <nav class="flex flex-col p-28 text-center justify-center items-center">
+        <nav class="flex flex-col p-28 text-center justify-center items-center md:hidden">
             <h6 class="text-lg md:hidden pb-6 text-gray-400">Menu</h6>
             <a class="text-4xl font-bold p-2 text-blue-darkest" href="/">Home</a>
             <a class="text-4xl font-bold p-2 text-blue-darkest" href="/scholarships">Scholarships</a>
             <a class="text-4xl font-bold p-2 text-blue-darkest" href="/institutions">Institutions</a>
             <a class="text-4xl font-bold p-2 text-blue-darkest" href="/about">About</a>
-            <a class="text-4xl font-bold p-2 text-blue-darkest" href="/contact">Contact</a>
 
             <div class="flex md:hidden pt-20">
                 <a href="https://www.facebook.com/ScholarBoatPH" class="px-3 social-icon">
