@@ -5,10 +5,11 @@
     <!-- CONTENT -->
 
     <!-- hero boats -->
+    <div class="min-h-screen">
         <div class="overflow-hidden">
             <img id="hero-image" class="p-6 z-10" src="static\media\svg\boats\boat-rows.svg" width="1200"/>
         </div>
-        <main class="px-6 md:px-8 lg:px-12 h-screen">
+        <main class="px-6 md:px-8 lg:px-12">
             <!-- hero text -->
             <div class="container py-6">
                 <h6 class="text-base lg:text-xl text-gray-500">All aboard the Scholarboat!</h6>
@@ -21,14 +22,14 @@
                 </a>
             </div>
         </main>
-    
+    </div>
 
     <section class="px-6 md:px-8 lg:px-12 lg:h-screen">
         <!-- temp number -->
         <div class="container h-60 lg:h-4/5 bg-yellow rounded-md p-8 lg:p-16 text-right"
         style="background: url('/static/media/images/wave-boat-yellow-min.png') no-repeat bottom;
         background-size: cover;">
-            <span class="text-3xl md:text-5xl lg:text-8xl font-bold">20+</span>
+            <span class="text-6xl lg:text-8xl font-bold">20+</span>
             <h6 class="lg:text-xl">Scholarships in the database</h6>
         </div>
     </section>
