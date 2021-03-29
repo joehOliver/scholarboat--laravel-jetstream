@@ -1,24 +1,32 @@
-<header>
-    <div class="flex justify-between">
+<header class="lg:px-16">
+    <!-- header row -->
+    <div class="flex justify-end md:justify-between">
+        <!-- hamburger menu on mobile -->
         <a href="#menu-open" id="menu-button" title="Open Menu" aria-label="Open Menu"
-            class="hamburger sticky md:hidden p-4">
+            class="hamburger absolute top-0 left-0 md:hidden p-4 hover:fill-current hover:text-blue">
             <svg class="default-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2949A3" width="36px" height="36px"
             role="presentation" focusable="false" aria-label="trigram for heaven symbol">
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
         </a>
+
+        <!-- brand -->
         <a class="text-blue-dark text-2xl font-bold p-4" href="/">
             scholarboatph
         </a>
+
+        <!-- nav links on desktop -->
         <nav class="md:flex flex-row hidden">
-            <a class="text-lg font-bold p-4 text-blue-darkest" href="/">Home</a>
-            <a class="text-lg font-bold p-4 text-blue-darkest" href="/scholarships">Scholarships</a>
-            <a class="text-lg font-bold p-4 text-blue-darkest" href="/institutions">Institutions</a>
-            <a class="text-lg font-bold p-4 text-blue-darkest" href="/about">About</a>
+            <a class="text-lg font-bold p-4 text-gray-500 hover:text-black transition" href="/">Home</a>
+            <a class="text-lg font-bold p-4 text-gray-500 hover:text-black transition" href="/scholarships">Scholarships</a>
+            <a class="text-lg font-bold p-4 text-gray-500 hover:text-black transition" href="/institutions">Institutions</a>
+            <a class="text-lg font-bold p-4 text-gray-500 hover:text-black transition" href="/about">About</a>
         </nav>
     </div>
+
+    <!-- side nav on mobile -->
     <aside id="menu-open"
-        class="absolute -top-0 z-20 bg-white max-h-full h-screen w-screen overflow-hidden overscroll-contain invisible shadow-2xl
+        class="fixed -top-0 z-20 bg-white max-h-full h-screen w-screen overflow-hidden overscroll-none invisible shadow-2xl
         md:hidden">
         <a href="#" id="menu-close" title="Close Menu" aria-label="Close Menu" class="md:hidden p-4 absolute top-0 left-0">
             <svg class="default-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2949A3" width="36px" height="36px">

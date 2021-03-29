@@ -22,6 +22,7 @@
         :root {
             --duration: .6s;
         }
+
         #menu-button {
             -webkit-tap-highlight-color: transparent;
             -webkit-touch-callout: none;
@@ -32,7 +33,7 @@
         #hero-image {
             min-width: 1200px;
             transform: translateX(-30%);
-            
+
         }
 
         @media (max-width: 640px) {
@@ -40,7 +41,7 @@
                 transform: translateX(-110vw);
                 will-change: transform;
                 transition: transform var(--duration) cubic-bezier(0.16, 1, 0.3, 1),
-                            visibility 0s linear var(--duration);
+                    visibility 0s linear var(--duration);
             }
 
             #menu-open:target {
@@ -53,6 +54,7 @@
                 transform: translateX(-70vw);
             }
         }
+
     </style>
 
     <!-- Scripts -->
@@ -63,6 +65,28 @@
     <div class="font-sans">
         {{ $slot }}
     </div>
-</body>
 
+    <script>
+        //close sidenav with escape key
+        const sidenav = document.querySelector('#menu-open');
+        sidenav.addEventListener('keyup', e => {
+            if (e.code === 'Escape') {
+                console.log('esc pressed!')
+                document.location.hash = "";
+            }
+        });
+
+        const closeNav = document.querySelector('#menu-close');
+        const openNav = document.querySelector('#menu-button');
+
+        sidenav.addEventListener('transitioned', e => {
+            if (e.propertyName !== 'transform') {
+                return;
+            }
+
+            const isOpen = document.location.hash === '#menu-open';
+            isOpen ? closeNav.focus() : openNav.focus();
+        });
+    </script>
+</body>
 </html>

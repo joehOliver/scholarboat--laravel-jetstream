@@ -14,10 +14,13 @@ module.exports = {
             fontFamily: {
                 sans: ['Atkinson Hyperlegible', ...defaultTheme.fontFamily.sans],
             },
+            fill: ['hover', 'focus'],
+            borderWidth: ['hover', 'focus']
         },
         colors: {
             transparent: 'transparent',
             current: 'currentColor',
+
       
             black: {
               light: '#292929',
@@ -25,17 +28,18 @@ module.exports = {
               dark: '#000000'
             },
             white: colors.white,
-            gray: colors.gray,
+            gray: colors.coolGray,
             red: colors.red,
             yellow: {
               light: '#fdff87',
               DEFAULT: '#F9C600',
-              dark: '#ffe100'
+              dark: '#ebb30c',
+              darkest: '#f29807'
             },
             green: colors.emerald,
             blue: {
-                lightest: '#B4C8DE',
-                light: '#9BA6C0',
+                lightest: '#9BA6C0',
+                light: '#4B5877',
                 DEFAULT: '#1E52E3',
                 dark: '#2949A3',
                 darkest: '#011945'
