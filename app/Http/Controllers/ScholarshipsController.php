@@ -18,6 +18,12 @@ class ScholarshipsController extends Controller
 
         return view('scholarships.index', ['scholarships' => $scholarships]);
     }
+    public function bridge()
+    {
+        $scholarships = Scholarship::latest()->get();
+
+        return view('scholarships.bridge', ['scholarships' => $scholarships]);
+    }
 
     /**
      * Show the form for creating a new resource.

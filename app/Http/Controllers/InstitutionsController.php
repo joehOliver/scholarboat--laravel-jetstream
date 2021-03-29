@@ -16,7 +16,13 @@ class InstitutionsController extends Controller
     {
         $institutions = Institution::latest()->get();
 
-        return view('scholarships.index', ['scholarships' => $institutions]);
+        return view('institutions.index', ['institutions' => $institutions]);
+    }
+    public function bridge()
+    {
+        $institutions = Institution::latest()->get();
+
+        return view('institutions.bridge', ['institutions' => $institutions]);
     }
 
     /**

@@ -61,7 +61,7 @@
     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 
-<body>
+<body class="grid grid-cols-1">
     <div class="font-sans">
         {{ $slot }}
     </div>
@@ -71,7 +71,6 @@
         const sidenav = document.querySelector('#menu-open');
         sidenav.addEventListener('keyup', e => {
             if (e.code === 'Escape') {
-                console.log('esc pressed!')
                 document.location.hash = "";
             }
         });
@@ -79,11 +78,10 @@
         const closeNav = document.querySelector('#menu-close');
         const openNav = document.querySelector('#menu-button');
 
-        sidenav.addEventListener('transitioned', e => {
+        sidenav.addEventListener('transitionend', e => {
             if (e.propertyName !== 'transform') {
                 return;
             }
-
             const isOpen = document.location.hash === '#menu-open';
             isOpen ? closeNav.focus() : openNav.focus();
         });

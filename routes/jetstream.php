@@ -21,26 +21,6 @@ Route::group(['middleware' => config('jetstream.middleware', ['web'])], function
         Route::get('/user/profile', [UserProfileController::class, 'show'])
                     ->name('profile.show');
 
-        Route::get('/scholarships', 'ScholarshipController@index');
-
-        //Route::get('/scholarships/add', 'ScholarshipsController@create');
-
-        //Route::post('/scholarships', 'ScholarshipsController@store');
-
-        //Route::get('/scholarships/{id}/edit', 'ScholarshipsController@edit');
-
-        //Route::put('/institutions/{id}/edit', 'ScholarshipsController@update');
-
-
-
-        //Route::post('/institutions/add', 'InstitutionsController@create');
-
-        
-
-        
-
-        //Route::get('/user/add');
-
         // API...
         if (Jetstream::hasApiFeatures()) {
             Route::get('/user/api-tokens', [ApiTokenController::class, 'index'])->name('api-tokens.index');

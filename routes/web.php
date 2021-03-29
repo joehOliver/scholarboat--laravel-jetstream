@@ -21,10 +21,30 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/scholarships', 'ScholarshipController@index');
-Route::get('/scholarships/{id}', 'ScholarshipController@show');
+//Route::prefix('bridge')->group(['middleware' => ['auth', 'verified']], function () {
+    //Route::resource
 
-Route::get('/institutions', 'InstitutionController@index');
+    //Route::get('/scholarships', 'ScholarshipController@index')->name('scholarships.index');
+
+    //Route::get('/scholarships/add', 'ScholarshipsController@create');
+
+    //Route::post('/scholarships', 'ScholarshipsController@store');
+
+    //Route::get('/scholarships/{id}/edit', 'ScholarshipsController@edit');
+
+    //Route::get('/institutions', 'InstitutionsController@index')->name('insitutions.index');
+
+    //Route::put('/institutions/{id}/edit', 'ScholarshipsController@update');
+
+    //Route::post('/institutions/add', 'InstitutionsController@create');
+//});
+
+/*Route::get('/scholarships', 'ScholarshipsController@index');
+Route::post('/scholarships', 'ScholarshipsController@store');
+Route::get('/scholarships/{id}', 'ScholarshipsController@show');
+
+Route::get('/institutions', 'InstitutionsController@index');
+Route::post('/institutions', 'InstitutionsController@store');
 Route::get('/institutions/{id}', 'InstitutionsController@show');
 
 Route::get('/about', function() {
@@ -34,3 +54,5 @@ Route::get('/about', function() {
 Route::get('/contact', function() {
     return view('static.contact');
 });
+
+*/
