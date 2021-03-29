@@ -6,14 +6,14 @@
         <x-nav />
 
         <!-- CONTENT -->
-        <div class="min-h-screen">
+        <div class="min-h-screen md:min-h-0 md:h-auto">
             <!-- hero boats overflowing from screen -->
             <div class="overflow-hidden">
                 <img id="hero-image" class="p-6" src="static\media\svg\boats\boat-rows.svg" width="1200"/>
             </div>
             <!-- hero text -->
             <section class="px-6 md:px-8 lg:px-16 lg:mb-28 h-96">
-                <h6 class="block text-base lg:text-xl text-gray-500">All aboard the Scholarboat!</h6>
+                <h6 class="block text-lg lg:text-xl text-gray-500">All aboard the Scholarboat!</h6>
                 <h1 class="block text-2xl md:text-4xl lg:text-6xl font-bold text-blue-darkest mb-12 lg:mb-14">
                     A scholarship database to help Filipinos find opportunities for colleges in the Philippines
                 </h1>

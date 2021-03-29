@@ -3,7 +3,7 @@
  class="fixed top-0 z-20 max-h-full h-screen w-screen grid grid-cols-4 
  overflow-hidden overscroll-contain invisible bg-transparent
  md:hidden">
- <nav class="col-span-3 flex flex-col py-28 px-12 justify-start md:hidden bg-white shadow-2xl">
+ <nav class="col-span-3 flex flex-col py-28 px-10 justify-start md:hidden bg-white shadow-2xl">
      <h6 class="text-lg md:hidden pb-6 text-gray-500">Menu</h6>
      <a class="text-3xl font-bold py-3 text-blue-darkest" href="/">Home</a>
      <a class="text-3xl font-bold py-3 text-blue-darkest" href="/scholarships">Scholarships</a>
@@ -11,7 +11,7 @@
      <a class="text-3xl font-bold py-3 text-blue-darkest" href="/about">About</a>
 
      <div class="flex md:hidden pt-20">
-         <a href="https://www.facebook.com/ScholarBoatPH" class="px-3 social-icon">
+         <a href="https://www.facebook.com/ScholarBoatPH" class="p-3 social-icon">
              <svg class="default-icon" width="36" height="36" role="img" xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 24 24">
                  <title>Facebook icon</title>
@@ -19,14 +19,14 @@
                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
              </svg>
          </a>
-         <a href="https://twitter.com/ScholarboatPH" class="px-3 social-icon">
+         <a href="https://twitter.com/ScholarboatPH" class="p-3 social-icon">
              <svg class="default-icon" width="36" height="36" role="img" xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 24 24">
                  <title>Twitter icon</title>
                  <path
                      d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
              </svg>
-             <a href="https://www.instagram.com/scholarboatph/" class="px-3 social-icon">
+             <a href="https://www.instagram.com/scholarboatph/" class="p-3 social-icon">
                  <svg class="default-icon" width="36" height="36" role="img" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                      <title>Instagram icon</title>
@@ -38,10 +38,6 @@
  </nav>
  <a href="#" id="menu-close" title="Close Menu" aria-label="Close Menu" 
  class="h-full col-span-1 bg-transparent 
- focus:ring-2 focus:ring-blue focus:ring-opacity-30">
-     <!--md:hidden p-4 absolute top-0 left-0<svg class="default-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2949A3" width="36px" height="36px">
-         <path d="M0 0h24v24H0z" fill="none" />
-         <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
-     </svg>  -->          
+ focus:outline-none focus:ring-4 focus:ring-blue focus:ring-opacity-40">     
  </a>
 </aside>

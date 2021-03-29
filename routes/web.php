@@ -21,7 +21,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-//Route::prefix('bridge')->group(['middleware' => ['auth', 'verified']], function () {
+//Route::prefix('admin')->group(['middleware' => ['auth', 'verified']], function () {
     //Route::resource
 
     //Route::get('/scholarships', 'ScholarshipController@index')->name('scholarships.index');

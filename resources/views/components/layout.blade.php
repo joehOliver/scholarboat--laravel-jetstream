@@ -9,7 +9,6 @@
     <title>{{ isset($title) ? $title : 'ScholarboatPH | All Aboard the Scholarboat!'}}</title>
     <meta name="description"
         content="A scholarship directory and promotion website to help Filipinos easily find opportunities and scholarships for colleges in the Philippines.">
-    <title>ScholarboatPH | All Aboard!</title>
     <link rel="icon" href="static\media\favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="static\media\apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="static\media\favicon-32x32.png">

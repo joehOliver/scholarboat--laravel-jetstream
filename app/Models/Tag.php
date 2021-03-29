@@ -11,7 +11,7 @@ class Tag extends Model
 
     protected $fillable = ['name'];
 
-    public function underThis()
+    public function scholarships()
     {
         return $this->belongsToMany(Scholarship::class)->withTimestamps();
     }

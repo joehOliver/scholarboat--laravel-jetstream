@@ -5,16 +5,16 @@
         <a href="#menu-open" id="menu-button" title="Open Menu" aria-label="Open Menu"
             class="md:hidden p-2
             rounded-full hover:fill-current hover:text-blue
-            focus:bg-blue focus:bg-opacity-10
-            focus:ring-2 focus:ring-blue focus:ring-opacity-30">
-            <svg class="default-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2949A3" width="36px" height="36px"
+            focus:outline-none focus:bg-blue focus:bg-opacity-10
+            focus:ring-2 focus:ring-blue focus:ring-opacity-40">
+            <svg class="default-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2949A3" width="42px" height="42px"
             role="presentation" focusable="false" aria-label="trigram for heaven symbol">
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
         </a>
 
         <!-- brand -->
-        <a class="text-blue-dark text-2xl p-2 font-bold" href="/">
+        <a class="text-blue-dark text-3xl p-3 font-bold" href="/">
             scholarboatph
         </a>
 
