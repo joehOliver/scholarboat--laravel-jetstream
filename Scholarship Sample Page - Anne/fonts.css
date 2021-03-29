@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Atkinson Hyperlegible;
+    src: url("../fonts/Atkinson Hyperlegible/Web Fonts/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2"),
+        url("../fonts/Atkinson Hyperlegible/Web Fonts/WOFF/Atkinson-Hyperlegible-Regular-102.woff"),
+        url("../fonts/Atkinson Hyperlegible/Web Fonts/TTF/Atkinson-Hyperlegible-Regular-102.ttf"),
+        url("../fonts/Atkinson Hyperlegible/Web Fonts/EOT/Atkinson-Hyperlegible-Regular-102.eot");
+}
+
+@font-face {
+    font-family: Atkinson Hyperlegible;
+    src: url("../fonts/Atkinson Hyperlegible/Web Fonts/WOFF2/Atkinson-Hyperlegible-Bold-102a.woff2"),
+        url("../fonts/Atkinson Hyperlegible/Web Fonts/WOFF/Atkinson-Hyperlegible-Bold-102.woff"),
+        url("../fonts/Atkinson Hyperlegible/Web Fonts/TTF/Atkinson-Hyperlegible-Bold-102.ttf"),
+        url("../fonts/Atkinson Hyperlegible/Web Fonts/EOT/Atkinson-Hyperlegible-Bold-102.eot");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto/roboto-regular.woff2"),
+        url("../fonts/Roboto/roboto-regular.woff"),
+        url("../fonts/Roboto/roboto-regular.ttf");
+}
