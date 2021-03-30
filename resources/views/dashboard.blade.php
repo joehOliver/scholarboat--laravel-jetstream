@@ -1,15 +1,17 @@
-<x-app-layout>
+<x-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
+        <h2 class="text-base lg:text-lg text-gray-600">
+            Captain on the bridge!
         </h2>
+        <h1 class="font-bold text-5xl lg:text-6xl text-blue-darkest">
+            {{ __('Dashboard') }}
+        </h1>
+        
     </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-jet-welcome />
-            </div>
+    <div class="py-6">
+        <div class="container 2xl:mx-auto px-6 md:px-8 lg:px-16">
+            <x-bridge />
         </div>
     </div>
-</x-app-layout>
+</x-layout>

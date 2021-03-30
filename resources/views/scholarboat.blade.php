@@ -1,15 +1,12 @@
 <x-layout>
-    
-    <x-sidenav />
-    <main>
-        <!-- HEADER -->
-        <x-nav />
-
         <!-- CONTENT -->
         <div class="min-h-screen md:min-h-0 md:h-auto">
             <!-- hero boats overflowing from screen -->
-            <div class="overflow-hidden">
-                <img id="hero-image" class="p-6" src="static\media\svg\boats\boat-rows.svg" width="1200"/>
+            <div class="overflow-hidden 2xl:overflow-auto">
+                <img id="hero-image"
+                class="inline p-6 transform -translate-x-80 md:-translate-x-1/4"
+                src="static\media\svg\boats\boat-rows.svg"
+                width="1200"/>
             </div>
             <!-- hero text -->
             <section class="px-6 md:px-8 lg:px-16 lg:mb-28 h-96">
@@ -39,8 +36,6 @@
 
         </footer>
 
-
-    </main>
     
     
 

@@ -31,8 +31,6 @@
 
         #hero-image {
             min-width: 1200px;
-            transform: translateX(-30%);
-
         }
 
         @media (max-width: 640px) {
@@ -48,10 +46,6 @@
                 transform: translateX(0);
                 transition: transform var(--duration) cubic-bezier(0.16, 1, 0.3, 1);
             }
-
-            #hero-image {
-                transform: translateX(-70vw);
-            }
         }
 
     </style>
@@ -60,10 +54,17 @@
     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 
-<body class="grid grid-cols-1">
-    <div class="font-sans">
+<body class="grid grid-cols-1 2xl:container 2xl:m-auto font-sans">
+    <x-sidenav />
+    <main>
+        <x-nav />
+        @if (isset($header))
+            <div class="px-6 py-2 mt-4 md:px-8 lg:px-16">
+                {{ $header }}
+            </div>
+        @endif
         {{ $slot }}
-    </div>
+    </main>
 
     <script>
         //close sidenav with escape key

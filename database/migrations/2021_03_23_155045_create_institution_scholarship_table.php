@@ -16,6 +16,17 @@ class CreateInstitutionScholarshipTable extends Migration
         Schema::create('institution_scholarship', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->unsignedBigInteger('scholarship_id');
+            $table->unsignedBigInteger('institution_id');
+
+            $table->foreign('scholarship_id')
+                ->references('id')
+                ->on('scholarships')
+                ->onDelete('cascade');
+            $table->foreign('institution_id')
+                ->references('id')
+                ->on('institutions')
+                ->onDelete('cascade');
         });
     }
 

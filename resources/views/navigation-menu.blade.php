@@ -80,6 +80,7 @@
                 @endif
 
                 <!-- Settings Dropdown -->
+                <!-- USER PROFILE SETTINGS -->
                 <div class="ml-3 relative">
                     <x-jet-dropdown align="right" width="48">
                         <x-slot name="trigger">
@@ -154,6 +155,7 @@
         </div>
 
         <!-- Responsive Settings Options -->
+        <!-- USER PROFILE SETTINGS -->
         <div class="pt-4 pb-1 border-t border-gray-200">
             <div class="flex items-center px-4">
                 @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())

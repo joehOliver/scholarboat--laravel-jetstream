@@ -18,4 +18,13 @@ class Institution extends Model
         'slug',
         'type'
     ];
+
+    public function path() 
+    {
+        return route('institutions.show', $this);
+    }
+
+    public function scholarships() {
+        return $this->hasMany(Scholarship::class);
+    }
 }

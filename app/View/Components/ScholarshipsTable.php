@@ -11,9 +11,12 @@ class ScholarshipsTable extends Component
      *
      * @return void
      */
-    public function __construct()
+
+    public $scholarships;
+
+    public function __construct($scholarships)
     {
-        //
+        $this->scholarships = $scholarships;
     }
 
     /**

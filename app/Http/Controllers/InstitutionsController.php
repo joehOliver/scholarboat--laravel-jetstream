@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class InstitutionsController extends Controller
 {
+    public function path() 
+    {
+        return route('institutions.show', $this);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -17,12 +21,6 @@ class InstitutionsController extends Controller
         $institutions = Institution::latest()->get();
 
         return view('institutions.index', ['institutions' => $institutions]);
-    }
-    public function bridge()
-    {
-        $institutions = Institution::latest()->get();
-
-        return view('institutions.bridge', ['institutions' => $institutions]);
     }
 
     /**

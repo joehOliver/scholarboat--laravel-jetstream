@@ -21,10 +21,13 @@ class Scholarship extends Model
         'contact',
         'slug'
     ];
+    public function institution() {
+        return $this->belongsTo(Institution::class);
+    }
 
     public function tags()
     {
-        return $this->belongsToMany(Tag::class)->withTimestamps();
+        return $this->belongsToMany(Tag::class);
     }
 
     public function addTag($tag) 
@@ -34,5 +37,10 @@ class Scholarship extends Model
         }
         
         $this->tag()->sync($tag, false);
+    }
+
+    public function path() 
+    {
+        return route('scholarships.show', $this);
     }
 }

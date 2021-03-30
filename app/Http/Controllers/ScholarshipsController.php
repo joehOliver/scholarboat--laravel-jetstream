@@ -18,12 +18,6 @@ class ScholarshipsController extends Controller
 
         return view('scholarships.index', ['scholarships' => $scholarships]);
     }
-    public function bridge()
-    {
-        $scholarships = Scholarship::latest()->get();
-
-        return view('scholarships.bridge', ['scholarships' => $scholarships]);
-    }
 
     /**
      * Show the form for creating a new resource.
@@ -43,7 +37,20 @@ class ScholarshipsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Scholarship::create(request()->validate([
+            'title' => 'required|max:255',
+            'description' => 'required',
+            'open_date' => 'nullable|date',
+            'close_date' => 'nullable|date',
+            'offers' => 'nullable|json',
+            'reqs' => 'nullable|json',
+            'qualifications' => 'nullable|json',
+            'link' => 'url|required',
+            'contact' => 'nullable|json',
+            'slug' => 'nullable|unique:scholarships|max:255'
+        ]));
+
+        return redirect('/scholarships');
     }
 
     /**
@@ -52,10 +59,8 @@ class ScholarshipsController extends Controller
      * @param  \App\Models\Scholarship  $scholarship
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Scholarship $scholarship)
     {
-        $scholarship = Scholarship::find($id);
-
         return view('scholarships.show', ['scholarship' => $scholarship]);
     }
 
@@ -67,8 +72,6 @@ class ScholarshipsController extends Controller
      */
     public function edit(Scholarship $scholarship)
     {
-        $scholarship = Scholarship::find($id);
-
         return view('scholarships.edit', ['scholarship' => $scholarship]);
     }
 
@@ -81,7 +84,20 @@ class ScholarshipsController extends Controller
      */
     public function update(Request $request, Scholarship $scholarship)
     {
-        //
+        Scholarship::update(request()->validate([
+            'title' => 'required|max:255',
+            'description' => 'required',
+            'open_date' => 'nullable|date',
+            'close_date' => 'nullable|date',
+            'offers' => 'nullable|json',
+            'reqs' => 'nullable|json',
+            'qualifications' => 'nullable|json',
+            'link' => 'url|required',
+            'contact' => 'nullable|json',
+            'slug' => 'nullable|unique:scholarships|max:255'
+        ]));
+
+        return redirect('/scholarships/' . $scholarship->id);
     }
 
     /**
