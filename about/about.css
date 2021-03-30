@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Atkinson Hyperlegible;
+    src: url("../fonts/Atkinson Hyperlegible/Web Fonts/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2"),
+        url("../fonts/Atkinson Hyperlegible/Web Fonts/WOFF/Atkinson-Hyperlegible-Regular-102.woff"),
+        url("../fonts/Atkinson Hyperlegible/Web Fonts/TTF/Atkinson-Hyperlegible-Regular-102.ttf"),
+        url("../fonts/Atkinson Hyperlegible/Web Fonts/EOT/Atkinson-Hyperlegible-Regular-102.eot");
+}
+table,th,td, div,body {
+    font-family: Atkinson Hyperlegible;
+}
+.about{
+    max-width: 40%;
+    min-width: 300px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 180px;
+}
+.MisVis_Container{
+    min-width: 500px;
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    padding-bottom: 5%;
+    margin-bottom: 8%;
+    border-bottom: 2px;
+    border-bottom-color: #AAAAAA;
+    border-bottom-style: solid;
+}
+@media (max-width: 1250px) {
+    .MisVis_Container {
+        flex-direction: column;
+    }
+}
+.misvis{
+    margin: auto;
+    margin-top: 0px;
+    min-width: 45%; 
+    padding: 3%;
+}
+.misvis h2{
+    font-size: calc(18px + 2vw);
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #304FFE;
+}
+.misvis div{
+    font-size: calc(12px + .6vw);
+    text-align: center;
+}
