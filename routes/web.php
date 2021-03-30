@@ -28,6 +28,7 @@ Route::get('/scholarships', [ScholarshipsController::class, 'index']);
 Route::get('/institutions', [InstitutionsController::class, 'index']);
 
 // Admin only routes
+/*
 Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::post('/scholarships', [ScholarshipsController::class, 'store']);
     Route::get('/scholarships/add', [ScholarshipsController::class, 'create']);
@@ -38,11 +39,12 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/institutions/{id}/edit', [InstitutionsController::class, 'edit']);
     Route::put('/institutions/{id}', [InstitutionsController::class, 'update']);
 });
+*/
 
 Route::get('/scholarships/{scholarship}', [ScholarshipsController::class, 'show'])->name('scholarships.show');
 Route::get('/institutions/{scholarship}', [InstitutionsController::class, 'show'])->name('institutions.show');
 
 Route::get('/about', function() {
-    return view('static.about');
+    return view('about');
 });
 

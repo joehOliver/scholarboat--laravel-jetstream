@@ -17,6 +17,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    {{ isset($customCSS) ? $customCSS : '' }}
     <style>
         :root {
             --duration: .6s;
