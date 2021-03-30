@@ -22,7 +22,7 @@
             </section>
         </div>
     
-        <section class="px-6 md:px-8 lg:px-16 lg:h-screen">
+        <section class="px-6 md:px-8 lg:px-16 lg:h-screen py-6">
             <!-- temp number -->
             <div class="container h-60 lg:h-4/5 bg-yellow rounded-md p-8 lg:p-16 text-right"
             style="background: url('/static/media/images/wave-boat-yellow-min.png') no-repeat bottom;

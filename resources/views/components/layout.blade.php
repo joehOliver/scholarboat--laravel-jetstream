@@ -65,6 +65,7 @@
         @endif
         {{ $slot }}
     </main>
+    <x-footer />
 
     <script>
         //close sidenav with escape key
